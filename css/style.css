@@ -1,0 +1,213 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Body */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #1e293b; /* slate-800 */
+  background: linear-gradient(to bottom right, #f0f7ff, #e0e7ff, #fafafa);
+}
+
+/* --- Section Styling --- */
+section {
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+/* Soft complementary backgrounds for variety */
+section:nth-of-type(odd) {
+  background: linear-gradient(to bottom right, #f1f5f9, #e2e8f0);
+}
+section:nth-of-type(even) {
+  background: linear-gradient(to bottom right, #e0f2fe, #f0f9ff);
+}
+
+/* Animated gradient CTA */
+section.bg-gradient-to-r {
+  background-size: 200% auto;
+  animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* --- Enhanced CTA Section --- */
+.cta-section {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #cffafe 100%);
+  background-size: 200% 200%;
+  animation: ctaGradient 10s ease infinite;
+  color: #0f172a; /* dark slate text for readability */
+}
+
+@keyframes ctaGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Improve text contrast in CTA */
+.cta-section h2 {
+  color: #0f172a;
+}
+.cta-section p {
+  color: #334155;
+}
+.cta-section a {
+  background-color: #2563eb;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+.cta-section a:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* Soft shadow base */
+.shadow-soft {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Headings */
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Links & Buttons */
+a, button {
+  transition: all 0.25s ease-in-out;
+}
+a:hover, button:hover {
+  transform: translateY(-1px);
+}
+
+/* Inputs & forms */
+input, textarea {
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: #f8fafc;
+}
+input:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+  background-color: #fff;
+}
+
+/* Navbar Animation */
+#mainHeader {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  animation: navSlide 0.6s ease-out;
+}
+#mainHeader.scrolled {
+  background-color: rgba(240, 247, 255, 0.95);
+  border-bottom: 1px solid #cbd5e1;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(12px);
+}
+@keyframes navSlide {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #1e293b;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #2563eb;
+  transition: width 0.3s ease;
+}
+.nav-link:hover { color: #2563eb; }
+.nav-link:hover::after { width: 100%; }
+.nav-link.active { color: #2563eb; font-weight: 600; }
+
+/* Card Hover */
+.card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer Gradient */
+footer {
+  background: linear-gradient(to right, #1d4ed8, #1e3a8a, #312e81);
+  color: #ffffff;
+  border-top: none;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+footer a {
+  color: #e2e8f0; /* light slate */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+  color: #93c5fd; /* soft blue hover */
+  transform: scale(1.1);
+}
+
+footer svg {
+  transition: transform 0.3s ease;
+}
+
+footer svg:hover {
+  transform: rotate(10deg) scale(1.15);
+}
+
+footer p {
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  header nav { display: none; }
+  section { text-align: center; }
+  form { padding: 1.5rem; }
+}
+
+/* Subtle Image Hover */
+img { transition: transform 0.3s ease; }
+img:hover { transform: scale(1.03); }
+
+/* Scroll Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+
+
+
+/* WhatsApp hover enhancement */
+footer a[href*="wa.me"]:hover {
+  color: #22c55e; /* Tailwind green-500 */
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* Fade-in Animation for Elements */
+.animate-fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fadeInVisible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
