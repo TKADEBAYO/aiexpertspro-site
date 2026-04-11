@@ -1,150 +1,1258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIExpertsPro — Ethical AI, Chatbots & Automation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>AI Governance Consultant UK | EU AI Act & FCA Compliance | AIExpertsPro</title>
+<meta name="description" content="AI governance advisory for CROs and CTOs at UK financial institutions. EU AI Act compliance, FCA model risk, and SMCR accountability — 5-day diagnostic, fixed fee £3,500. London-based, UK-wide.">
+<meta name="keywords" content="AI governance UK, EU AI Act compliance financial services, FCA AI model risk, AI governance consultant London, AI governance financial institutions, SMCR AI accountability, model risk management AI, AI Act high risk systems, AI governance diagnostic, CRO AI compliance UK">
+<link rel="canonical" href="https://aiexpertspro.com/">
+
+<!-- Open Graph (LinkedIn, social sharing) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aiexpertspro.com/">
+<meta property="og:title" content="AI Governance Consultant UK | EU AI Act & FCA Compliance | AIExpertsPro">
+<meta property="og:description" content="Board-ready AI governance for CROs and CTOs at UK financial institutions. EU AI Act compliance, FCA alignment, 5-day diagnostic — fixed fee £3,500.">
+<meta property="og:image" content="https://aiexpertspro.com/assets/images/og-image.png">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="AIExpertsPro">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Governance Consultant UK | AIExpertsPro">
+<meta name="twitter:description" content="5-day AI governance diagnostic for UK financial institutions. EU AI Act compliance, FCA alignment. Fixed fee £3,500.">
+<meta name="twitter:image" content="https://aiexpertspro.com/assets/images/og-image.png">
+
+<!-- Author & Trust signals -->
+<meta name="author" content="Folu, AIExpertsPro">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="geo.region" content="GB-LND">
+<meta name="geo.placename" content="London, United Kingdom">
+
+<!-- Schema.org structured data — Person + ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://aiexpertspro.com/#organization",
+      "name": "AIExpertsPro",
+      "url": "https://aiexpertspro.com",
+      "logo": "https://aiexpertspro.com/assets/images/logo.png",
+      "description": "AI governance advisory for CROs and CTOs at UK financial institutions. EU AI Act compliance, FCA model risk oversight, and SMCR accountability frameworks.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      },
+      "areaServed": "GB",
+      "knowsAbout": ["EU AI Act", "AI Governance", "FCA Compliance", "Model Risk Management", "SMCR", "ISO 42001", "DORA"],
+      "founder": {
+        "@type": "Person",
+        "name": "Folu",
+        "jobTitle": "AI Governance Architect",
+        "url": "https://linkedin.com/in/fuk0",
+        "knowsAbout": ["AI Governance", "EU AI Act", "Enterprise Architecture", "SAP S/4HANA", "Financial Services Regulation"]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Governance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "AI Governance Diagnostic",
+            "description": "5-day AI governance diagnostic for UK financial institutions. AI risk register, 12-dimension governance scorecard, 90-day remediation roadmap, executive debrief.",
+            "price": "3500",
+            "priceCurrency": "GBP",
+            "url": "https://stan.store/folukt3/p/ai-governance-diagnostic"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the EU AI Act deadline for UK financial institutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "High-risk AI systems — including credit scoring, fraud detection, and AML monitoring — must comply with full EU AI Act requirements by August 2026 (with a further extension to December 2027 now in discussion). UK financial institutions with EU operations or EU-based counterparties face direct exposure regardless of Brexit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the AI Governance Diagnostic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 5-day structured engagement for CROs and CTOs at UK financial institutions. It delivers an AI risk register mapped against EU AI Act tiers, a scored assessment across 12 governance control dimensions, a 90-day remediation roadmap, and a 90-minute executive debrief. Fixed fee of £3,500."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which AI systems are classified as high-risk under the EU AI Act?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Annex III of the EU AI Act, high-risk AI systems in financial services include credit scoring models, fraud detection systems, AML transaction monitoring, and automated customer decisions affecting access to financial services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does SMCR accountability for AI mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under SMCR (Senior Managers and Certification Regime), a named senior manager must be accountable for AI governance at board level. Most UK financial institutions have not yet assigned this accountability, creating regulatory exposure."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aiexpertspro.com/#webpage",
+      "url": "https://aiexpertspro.com/",
+      "name": "AI Governance Consultant UK | EU AI Act & FCA Compliance | AIExpertsPro",
+      "description": "AI governance advisory for CROs and CTOs at UK financial institutions.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aiexpertspro.com/"}]
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --navy: #0B1829;
+    --navy-mid: #142236;
+    --navy-light: #1E3350;
+    --gold: #C9A84C;
+    --gold-light: #E8C96A;
+    --cream: #F5F0E8;
+    --cream-dim: #E8E0D0;
+    --white: #FFFFFF;
+    --muted: #8A9BB0;
+    --border: rgba(201,168,76,0.2);
+    --border-dim: rgba(255,255,255,0.08);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--navy);
+    color: var(--cream);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.25rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-dim);
+    background: rgba(11,24,41,0.92);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--cream);
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--gold); }
+
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--cream); }
+
+  .nav-cta {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  .nav-cta:hover { background: var(--gold); color: var(--navy); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 8rem 4rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(201,168,76,0.04) 100%);
+    pointer-events: none;
+  }
+
+  .hero-grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+  }
+
+  .hero-left {
+    padding-right: 4rem;
+    animation: fadeUp 0.9s ease both;
+  }
+
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-headline em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+
+  .btn-primary {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); }
+
+  .btn-ghost {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    border: 1px solid var(--border-dim);
+    color: var(--muted);
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+  .btn-ghost:hover { border-color: var(--cream); color: var(--cream); }
+
+  .hero-right {
+    animation: fadeUp 0.9s ease 0.2s both;
+    position: relative;
+  }
+
+  .hero-card {
+    background: var(--navy-mid);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    position: relative;
+  }
+
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3rem;
+    height: 3px;
+    background: var(--gold);
+  }
+
+  .hero-card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-card-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    line-height: 1;
+  }
+  .hero-card-price span {
+    font-size: 1rem;
+    color: var(--muted);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+  }
+
+  .hero-card-items { list-style: none; margin-bottom: 2rem; }
+  .hero-card-items li {
+    font-size: 0.88rem;
+    color: var(--cream-dim);
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--border-dim);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .hero-card-items li::before {
+    content: '→';
+    color: var(--gold);
+    font-size: 0.75rem;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+  }
+
+  .hero-card-cta {
+    display: block;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.2s;
+  }
+  .hero-card-cta:hover { background: var(--gold-light); }
+
+  .hero-badge {
+    margin-top: 1rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  /* TRUST BAR */
+  .trust-bar {
+    border-top: 1px solid var(--border-dim);
+    border-bottom: 1px solid var(--border-dim);
+    padding: 1.5rem 4rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+    background: var(--navy-mid);
+  }
+
+  .trust-bar-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .trust-items {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    font-size: 0.8rem;
+    color: var(--muted);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .trust-item::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* SECTION WRAPPER */
+  section { padding: 6rem 4rem; }
+
+  .section-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .section-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+
+  .section-title em { font-style: italic; color: var(--gold); }
+
+  .section-body {
+    font-size: 0.95rem;
+    color: var(--muted);
+    max-width: 580px;
+    line-height: 1.8;
+  }
+
+  /* PROBLEM SECTION */
+  .problem { background: var(--navy); }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .problem-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border-dim);
+    border: 1px solid var(--border-dim);
+  }
+
+  .stat-box {
+    background: var(--navy-mid);
+    padding: 2rem;
+    position: relative;
+  }
+  .stat-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 2rem;
+    width: 2rem;
+    height: 2px;
+    background: var(--gold);
+    opacity: 0.4;
+  }
+
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .problem-points { list-style: none; }
+  .problem-points li {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-dim);
+    font-size: 0.92rem;
+    color: var(--cream-dim);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .problem-points li:last-child { border-bottom: none; }
+  .problem-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    flex-shrink: 0;
+    padding-top: 0.2rem;
+  }
+
+  /* DIAGNOSTIC SECTION */
+  .diagnostic { background: var(--navy-mid); }
+
+  .diagnostic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border-dim);
+    border: 1px solid var(--border-dim);
+    margin-top: 3rem;
+  }
+
+  .diag-item {
+    background: var(--navy-mid);
+    padding: 2.5rem;
+    position: relative;
+    transition: background 0.2s;
+  }
+  .diag-item:hover { background: var(--navy-light); }
+
+  .diag-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: rgba(201,168,76,0.12);
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    line-height: 1;
+  }
+
+  .diag-icon {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--border);
+    display: inline-block;
+  }
+
+  .diag-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+  }
+
+  .diag-body {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ABOUT */
+  .about { background: var(--navy); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .about-portrait {
+    position: relative;
+  }
+
+  .about-portrait-box {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--navy-light);
+    border: 1px solid var(--border);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .about-portrait-box::before {
+    content: '';
+    position: absolute;
+    top: -1rem; left: -1rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .portrait-placeholder {
+    text-align: center;
+  }
+  .portrait-initials {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgba(201,168,76,0.3);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .portrait-hint {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  .about-content {}
+  .about-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0.25rem;
+  }
+  .about-title-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 2rem;
+  }
+
+  .about-bio {
+    font-size: 0.95rem;
+    color: var(--cream-dim);
+    line-height: 1.85;
+    margin-bottom: 2rem;
+  }
+
+  .about-credentials { list-style: none; margin-bottom: 2rem; }
+  .about-credentials li {
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border-dim);
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  .about-credentials li::before {
+    content: '✦';
+    color: var(--gold);
+    font-size: 0.6rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+  }
+
+  /* SERVICES */
+  .services { background: var(--navy-mid); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border-dim);
+    border: 1px solid var(--border-dim);
+    margin-top: 3rem;
+  }
+
+  .service-card {
+    background: var(--navy-mid);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.2s;
+    position: relative;
+  }
+  .service-card:hover { background: var(--navy-light); }
+  .service-card.featured::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gold);
+  }
+
+  .service-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  .service-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+
+  .service-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+  }
+  .service-price span {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .service-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex: 1;
+  }
+
+  .service-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.2s;
+  }
+  .service-link:hover { gap: 1rem; }
+  .service-link::after { content: '→'; }
+
+  /* REGULATORY */
+  .regulatory { background: var(--navy); }
+
+  .reg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .reg-card {
+    border: 1px solid var(--border-dim);
+    padding: 1.75rem;
+    position: relative;
+  }
+  .reg-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  .reg-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+
+  .reg-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* CTA SECTION */
+  .cta-section {
+    background: var(--navy-mid);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .cta-inner { position: relative; max-width: 720px; margin: 0 auto; }
+
+  .cta-large {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  .cta-large em { font-style: italic; color: var(--gold); }
+
+  .cta-sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  /* FOOTER */
+  footer {
+    padding: 3rem 4rem;
+    border-top: 1px solid var(--border-dim);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--cream);
+    text-decoration: none;
+  }
+  .footer-logo span { color: var(--gold); }
+
+  .footer-links { display: flex; gap: 2rem; list-style: none; }
+  .footer-links a {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--cream); }
+
+  .footer-copy {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 7rem 1.5rem 3rem; gap: 3rem; }
+    .hero::before { display: none; }
+    .hero-left { padding-right: 0; }
+    section { padding: 4rem 1.5rem; }
+    .problem-grid, .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .diagnostic-grid, .services-grid { grid-template-columns: 1fr; }
+    .reg-grid { grid-template-columns: 1fr; }
+    .trust-bar { padding: 1.25rem 1.5rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+    .about-portrait { display: none; }
+  }
+</style>
 </head>
+<body>
 
-<body class="bg-white text-slate-900">
-  <!-- Header -->
-<header id="mainHeader"
-  class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-slate-200 shadow-soft transition-all duration-300 ease-in-out">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <a href="index.html" class="flex items-center gap-2 group">
-      <img src="assets/images/logo.png" alt="AIExpertsPro"
-           class="w-10 h-10 rounded-xl shadow-soft transition-transform duration-300 group-hover:rotate-6" />
-      <span class="font-bold text-lg tracking-tight group-hover:text-blue-600 transition-colors">AIExpertsPro</span>
-    </a>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">AIExperts<span>Pro</span></a>
+  <ul class="nav-links">
+    <li><a href="#diagnostic">Diagnostic</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#regulatory">Regulatory</a></li>
+  </ul>
+  <a href="https://stan.store/folukt3/p/ai-governance-diagnostic" class="nav-cta" target="_blank">Book Diagnostic</a>
+</nav>
 
-    <nav class="hidden md:flex gap-8 font-medium">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="services.html" class="nav-link">Services</a>
-      <a href="work.html" class="nav-link">Work</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-  </div>
-</header>
-
-  <!-- Hero Section -->
-  <section class="text-center py-20 bg-gradient-to-b from-sky-100 to-white px-4">
-    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 max-w-3xl mx-auto">
-      Chatbots, Automation & <span class="text-blue-600">Ethical AI</span> for Ambitious Teams
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-left">
+    <p class="hero-eyebrow">AI Governance · UK Financial Services</p>
+    <h1 class="hero-headline">
+      AI that operates.<br>
+      Governance that<br>
+      <em>protects.</em>
     </h1>
-    <p class="mt-5 text-gray-600 max-w-xl mx-auto">
-      Helping businesses deploy responsible AI that saves time, grows revenue, and builds trust.
-    </p>
-    <div class="mt-8 flex justify-center gap-4 flex-wrap">
-      <a href="contact.html" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-soft">Book a Strategy Call</a>
-      <a href="services.html" class="px-6 py-3 border border-gray-300 hover:border-blue-600 rounded-xl hover:text-blue-700">Explore Services</a>
+    <p class="hero-sub">Board-ready AI governance for CROs and CTOs at UK financial institutions — delivered by a practising enterprise architect with 20 years of regulated-sector experience.</p>
+    <div class="hero-actions">
+      <a href="https://stan.store/folukt3/p/ai-governance-diagnostic" class="btn-primary" target="_blank">Book the Diagnostic — £3,500</a>
+      <a href="#about" class="btn-ghost">Meet Folu</a>
     </div>
-  </section>
-
-<!-- About Preview --> 
- <section class="py-16 px-4 bg-slate-50 border-t border-b border-gray-100 text-center"> 
-  <div class="max-w-3xl mx-auto">
-     <h2 class="text-3xl font-bold mb-6">Who We Are</h2> 
-     <p class="text-gray-600 leading-relaxed"> <strong>AIExpertsPro</strong> is a London-based AI automation agency helping businesses implement practical, measurable AI solutions — from chatbots and workflow automation to AI governance frameworks. </p> 
-     <p class="mt-4 text-gray-600"> We combine deep domain expertise with ethical design principles to help teams adopt AI with confidence. </p> 
-     <a href="about.html" class="inline-block mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-soft transition"> Learn More About Us </a> 
-    </div> 
-  </section>
-
-
-  <!-- Services Preview -->
-  <section class="py-16 px-4 bg-gradient-to-b from-blue-100 to-blue-50">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Our Core Services</h2>
-      <div class="grid md:grid-cols-3 gap-8 text-left">
-        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-soft hover:shadow-xl transition">
-          <h3 class="font-semibold text-xl mb-2">Chatbots & AI Agents</h3>
-          <p class="text-gray-600">Custom GPT-powered assistants for websites, WhatsApp, and Instagram DMs.</p>
-        </div>
-        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-soft hover:shadow-xl transition">
-          <h3 class="font-semibold text-xl mb-2">Automation & Integration</h3>
-          <p class="text-gray-600">Automate repetitive business tasks using Zapier, Make, and secure APIs.</p>
-        </div>
-        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-soft hover:shadow-xl transition">
-          <h3 class="font-semibold text-xl mb-2">AI Training & Governance</h3>
-          <p class="text-gray-600">Upskill your teams with AI workshops, ethical AI policies, and compliance playbooks.</p>
-        </div>
-      </div>
-      <div class="mt-10">
-        <a href="services.html" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-soft">View All Services</a>
-      </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <p class="hero-card-label">Featured Service</p>
+      <h2 class="hero-card-title">AI Governance Diagnostic</h2>
+      <div class="hero-card-price">£3,500 <span>· fixed fee</span></div>
+      <ul class="hero-card-items">
+        <li>AI risk register mapped against EU AI Act tiers</li>
+        <li>Scored assessment across 12 governance control dimensions</li>
+        <li>90-day remediation roadmap in board-ready format</li>
+        <li>90-minute executive debrief with Folu personally</li>
+        <li>Delivered in 5 business days</li>
+      </ul>
+      <a href="https://stan.store/folukt3/p/ai-governance-diagnostic" class="hero-card-cta" target="_blank">Book Your Diagnostic</a>
+      <p class="hero-badge">No retainer required · Fixed scope · Board-ready output</p>
     </div>
-  </section>
-
-  <!-- CTA Section -->
-<section class="cta-section py-20 text-center px-4 text-slate-900">
-  <h2 class="text-3xl font-bold mb-4">Ready to Bring AI Into Your Business?</h2>
-  <p class="max-w-xl mx-auto mb-8 text-slate-700">
-    Start with a free strategy session — discover how AI can cut costs and boost your productivity.
-  </p>
-  <a href="contact.html"
-     class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-soft hover:shadow-xl transition">
-     Get Started
-  </a>
+  </div>
 </section>
 
- <footer class="py-10 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-800 text-center text-white">
-  <div class="max-w-6xl mx-auto">
-    <div class="flex justify-center gap-8 mb-6 flex-wrap">
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/aiexpertspro/" target="_blank" aria-label="Instagram"
-         class="hover:text-pink-400 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-          <path d="M7.5 2A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2h-9ZM12 7.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4Zm0 1.7a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-.9a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Z" />
-        </svg>
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/company/aiexpertspro/" target="_blank" aria-label="LinkedIn"
-         class="hover:text-blue-300 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-          <path d="M4.98 3.5A2.5 2.5 0 1 0 4.98 8.5 2.5 2.5 0 1 0 4.98 3.5zM3 9h4v12H3zM9 9h3.6v1.64h.05a3.94 3.94 0 0 1 3.55-1.95c3.8 0 4.5 2.5 4.5 5.75V21h-4v-5.36c0-1.28 0-2.92-1.78-2.92-1.78 0-2.05 1.39-2.05 2.82V21H9V9z"/>
-        </svg>
-      </a>
-
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@aiexpertspro" target="_blank" aria-label="TikTok"
-         class="hover:text-gray-300 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-          <path d="M12.5 2h3.3a6 6 0 0 0 6 6v3.3a9.3 9.3 0 0 1-6-1.8V18a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V2z"/>
-        </svg>
-      </a>
-
-      <!-- Email -->
-      <a href="mailto:hello@aiexpertspro.com" aria-label="Email"
-         class="hover:text-blue-300 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/>
-        </svg>
-      </a>
-
-      <!-- WhatsApp -->
-      <a href="https://wa.me/447944920135" target="_blank" aria-label="WhatsApp"
-         class="hover:text-green-400 transition-colors flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-          <path d="M12 2C6.477 2 2 6.144 2 11.351c0 2.002.693 3.864 1.861 5.36L2 22l5.523-1.733A9.986 9.986 0 0 0 12 20.702C17.523 20.702 22 16.558 22 11.351S17.523 2 12 2Zm0 17.702a8.35 8.35 0 0 1-4.46-1.283l-.318-.2-3.264 1.026 1.055-3.157-.21-.325a7.066 7.066 0 0 1-1.1-3.996c0-4.064 3.485-7.373 7.767-7.373 4.281 0 7.767 3.309 7.767 7.373 0 4.064-3.486 7.373-7.767 7.373Zm4.457-5.484c-.243-.122-1.441-.713-1.663-.793-.223-.081-.386-.122-.55.122-.162.243-.632.793-.774.956-.142.162-.284.182-.527.061-.243-.122-1.028-.372-1.959-1.187-.725-.636-1.214-1.42-1.357-1.663-.142-.243-.015-.374.107-.496.11-.11.243-.284.364-.426.122-.142.162-.243.243-.406.081-.162.04-.305-.02-.426-.061-.122-.55-1.327-.755-1.816-.198-.475-.398-.411-.55-.419l-.468-.008c-.162 0-.426.061-.649.305-.223.243-.851.83-.851 2.024 0 1.195.872 2.35.993 2.513.122.162 1.71 2.622 4.143 3.682.58.25 1.033.399 1.386.511.582.185 1.111.159 1.529.096.467-.07 1.441-.588 1.644-1.155.203-.567.203-1.054.142-1.155-.061-.102-.223-.162-.466-.284Z"/>
-        </svg>
-      </a>
-    </div>
-
-    <!-- Legal Links -->
-    <p class="text-sm text-blue-100 mt-4">
-      <a href="privacy.html" class="hover:text-blue-300 transition-colors">Privacy Policy</a> •
-      <a href="terms.html" class="hover:text-blue-300 transition-colors">Terms & Conditions</a>
-    </p>
-
-    <p class="text-sm text-blue-100 mt-2">© <span id="year"></span> AIExpertsPro. All rights reserved.</p>
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <span class="trust-bar-label">Experience across</span>
+  <div class="trust-items">
+    <span class="trust-item">Reinsurance & Insurance</span>
+    <span class="trust-item">Local Government ERP</span>
+    <span class="trust-item">Oil & Gas Operations</span>
+    <span class="trust-item">Financial Services</span>
+    <span class="trust-item">SAP S/4HANA</span>
+    <span class="trust-item">EU AI Act Compliance</span>
+    <span class="trust-item">FCA Governance Frameworks</span>
   </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem" id="problem">
+  <div class="reveal">
+    <p class="section-eyebrow">The Governance Gap</p>
+    <h2 class="section-title">Your AI is in production.<br><em>Your governance isn't.</em></h2>
+    <p class="section-body">Most UK financial institutions have deployed AI across credit, fraud, customer service, and AML — but governance documentation lags years behind. The EU AI Act and FCA are no longer waiting.</p>
+  </div>
+  <div class="problem-grid">
+    <div class="problem-stats reveal">
+      <div class="stat-box">
+        <div class="stat-num">Aug '26</div>
+        <div class="stat-label">EU AI Act full enforcement deadline for high-risk AI systems</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Governance control dimensions most firms cannot evidence</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5 days</div>
+        <div class="stat-label">To complete your diagnostic and know exactly where you stand</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">£3,500</div>
+        <div class="stat-label">Fixed fee — less than one day of regulatory enforcement costs</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <ul class="problem-points">
+        <li>
+          <span class="problem-num">01</span>
+          <span>Credit scoring, fraud detection, and AML systems are classified as High Risk under Annex III of the EU AI Act — full conformity obligations apply now.</span>
+        </li>
+        <li>
+          <span class="problem-num">02</span>
+          <span>FCA operational resilience expectations explicitly cover AI model risk — SR 11-7 and SS1/23 principles require documented oversight, explainability, and audit trails.</span>
+        </li>
+        <li>
+          <span class="problem-num">03</span>
+          <span>SMCR accountability for AI governance is still unassigned at board level in most financial institutions — a regulatory exposure that is straightforward to fix.</span>
+        </li>
+        <li>
+          <span class="problem-num">04</span>
+          <span>When the board asks "Are we EU AI Act ready?" — you need an answer you can defend. The diagnostic gives you that answer in five days.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNOSTIC -->
+<section class="diagnostic" id="diagnostic">
+  <div class="reveal">
+    <p class="section-eyebrow">The Diagnostic</p>
+    <h2 class="section-title">Four deliverables.<br><em>Five days.</em></h2>
+    <p class="section-body">A structured engagement for CROs and CTOs — fixed scope, fixed fee, no retainer required. Every deliverable is board-ready on day five.</p>
+  </div>
+  <div class="diagnostic-grid">
+    <div class="diag-item reveal">
+      <div class="diag-number">01</div>
+      <div class="diag-icon">Risk Register</div>
+      <h3 class="diag-title">AI Risk Register mapped against EU AI Act tiers</h3>
+      <p class="diag-body">Every live or planned AI use case in your organisation classified against EU AI Act risk tiers — Prohibited, High Risk, Limited Risk, Minimal Risk — with production status and governance gap flags for each system.</p>
+    </div>
+    <div class="diag-item reveal">
+      <div class="diag-number">02</div>
+      <div class="diag-icon">Governance Score</div>
+      <h3 class="diag-title">Scored assessment across 12 control dimensions</h3>
+      <p class="diag-body">Each governance dimension scored 1–5 with detailed findings — covering human oversight, explainability, data provenance, model drift, bias, vendor risk, incident response, SMCR accountability, staff training, documentation, and data subject rights.</p>
+    </div>
+    <div class="diag-item reveal">
+      <div class="diag-number">03</div>
+      <div class="diag-icon">Roadmap</div>
+      <h3 class="diag-title">90-day remediation roadmap in board-ready format</h3>
+      <p class="diag-body">Prioritised actions sequenced across three phases — immediate risk reduction, governance infrastructure, and continuous oversight — with named owners, effort ratings, and regulatory linkage for each action.</p>
+    </div>
+    <div class="diag-item reveal">
+      <div class="diag-number">04</div>
+      <div class="diag-icon">Debrief</div>
+      <h3 class="diag-title">90-minute executive debrief with Folu personally</h3>
+      <p class="diag-body">A structured 90-minute session with your CRO or CTO — walking through findings, stress-testing prioritisation decisions, covering the regulatory horizon, and agreeing next steps before close of engagement.</p>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:3rem;" class="reveal">
+    <a href="https://stan.store/folukt3/p/ai-governance-diagnostic" class="btn-primary" target="_blank">Book Your Diagnostic — £3,500 Fixed Fee</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="reveal">
+    <p class="section-eyebrow">About</p>
+    <h2 class="section-title">The advisor is<br><em>the difference.</em></h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-portrait reveal">
+      <div class="about-portrait-box">
+        <div class="portrait-placeholder">
+          <span class="portrait-initials">FK</span>
+          <span class="portrait-hint">Replace with headshot</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <h3 class="about-name">Folu</h3>
+      <p class="about-title-tag">AI Governance Architect · AIExpertsPro</p>
+      <p class="about-bio">I am a practising enterprise architect with over 20 years of delivery experience across financial services, insurance, oil and gas, and public sector. I am not an academic advising on governance theory — I am currently embedded inside live AI-adjacent programmes at a major reinsurance institution and a large local government ERP migration.</p>
+      <p class="about-bio" style="margin-top:1rem;">That lived delivery context is what makes this diagnostic different. I know where the gaps actually are — because I see them in production, not in published frameworks.</p>
+      <ul class="about-credentials">
+        <li>20+ years enterprise architecture across SAP, cloud, and regulated industries</li>
+        <li>Active delivery across reinsurance and public sector AI programmes</li>
+        <li>AI Governance column — The Boss newspaper</li>
+        <li>Founder — AIExpertsPro · NeuroHelp AI · Tade Autism Centre</li>
+        <li>Pursuing Claude Certified Architect (CCA) credential</li>
+        <li>London-based · Available UK-wide and internationally</li>
+      </ul>
+      <a href="https://stan.store/folukt3/p/ai-governance-diagnostic" class="btn-primary" target="_blank">Work With Folu</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="reveal">
+    <p class="section-eyebrow">Services</p>
+    <h2 class="section-title">Start with a diagnostic.<br><em>Scale to governance.</em></h2>
+    <p class="section-body">Three service tiers designed for where you are. Most clients begin with the diagnostic and move to a retainer once they have seen the quality of output.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card featured reveal">
+      <p class="service-tag">Most Popular · Start Here</p>
+      <h3 class="service-name">AI Governance Diagnostic</h3>
+      <div class="service-price">£3,500 <span>· fixed fee</span></div>
+      <p class="service-desc">One-time five-day engagement. AI risk register, 12-dimension governance scorecard, 90-day roadmap, and executive debrief. Board-ready output. No retainer required.</p>
+      <a href="https://stan.store/folukt3/p/ai-governance-diagnostic" class="service-link" target="_blank">Book now</a>
+    </div>
+    <div class="service-card reveal">
+      <p class="service-tag">Ongoing Advisory</p>
+      <h3 class="service-name">Governance Retainer</h3>
+      <div class="service-price">£3,500 <span>· per month</span></div>
+      <p class="service-desc">Monthly advisory covering regulatory monitoring, model risk oversight, board reporting, and ongoing governance documentation. Minimum 3-month engagement.</p>
+      <a href="mailto:hello@aiexpertspro.com" class="service-link">Enquire</a>
+    </div>
+    <div class="service-card reveal">
+      <p class="service-tag">Board Level</p>
+      <h3 class="service-name">Board AI Advisor</h3>
+      <div class="service-price">POA</div>
+      <p class="service-desc">Fractional AI governance advisor for boards and risk committees. Quarterly attendance, regulatory escalation support, and AI accountability framework design.</p>
+      <a href="mailto:hello@aiexpertspro.com" class="service-link">Discuss</a>
+    </div>
+  </div>
+</section>
+
+<!-- REGULATORY -->
+<section class="regulatory" id="regulatory">
+  <div class="reveal">
+    <p class="section-eyebrow">Regulatory Context</p>
+    <h2 class="section-title">The frameworks<br><em>driving urgency.</em></h2>
+    <p class="section-body">Every diagnostic is conducted against the frameworks that matter to UK financial institutions. This is not generic AI governance — it is regulatory-grade, jurisdiction-specific, and defensible.</p>
+  </div>
+  <div class="reg-grid">
+    <div class="reg-card reveal">
+      <p class="reg-name">EU AI Act · Regulation EU 2024/1689</p>
+      <p class="reg-desc">Full enforcement for high-risk AI systems from August 2026. UK financial institutions with EU operations or EU-based counterparties face direct exposure. Credit scoring, fraud detection, and AML are Annex III High Risk systems.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">FCA · PS21/3 Operational Resilience</p>
+      <p class="reg-desc">FCA operational resilience policy explicitly addresses AI model risk. Firms must demonstrate oversight, explainability, and human intervention capability for AI systems used in important business services.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">SR 11-7 / SS1/23 · Model Risk Management</p>
+      <p class="reg-desc">Model risk management principles require documented validation, ongoing monitoring, and clear accountability for AI models. Most firms have MRM frameworks that predate modern AI — the gap is structural, not theoretical.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">SMCR · Senior Managers Accountability</p>
+      <p class="reg-desc">AI governance accountability under SMCR remains unassigned at board level in most firms. The diagnostic identifies the appropriate SMF holder and documents the accountability chain.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">ISO/IEC 42001:2023 · AI Management Systems</p>
+      <p class="reg-desc">The first international standard for AI management systems — increasingly referenced in regulatory guidance and vendor due diligence. The diagnostic scores your organisation against its core requirements.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">DORA · Digital Operational Resilience Act</p>
+      <p class="reg-desc">DORA introduces AI-specific third-party risk requirements for financial entities. Vendor AI governance clauses, audit rights, and concentration risk assessments are now regulatory obligations, not best practice.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <h2 class="cta-large">Know your AI risk<br>exposure <em>this month.</em></h2>
+    <p class="cta-sub">Five days. Fixed fee. Board-ready output. Three diagnostic slots available this month — each given full individual attention.</p>
+    <div class="cta-buttons">
+      <a href="https://stan.store/folukt3/p/ai-governance-diagnostic" class="btn-primary" target="_blank">Book the Diagnostic — £3,500</a>
+      <a href="mailto:hello@aiexpertspro.com" class="btn-ghost">Send an Enquiry</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION — SEO & featured snippet optimised -->
+<section class="regulatory" id="faq" style="background: var(--navy);">
+  <div class="reveal">
+    <p class="section-eyebrow">Common Questions</p>
+    <h2 class="section-title">Questions CROs<br><em>ask us first.</em></h2>
+  </div>
+  <div class="reg-grid" style="margin-top:3rem;">
+    <div class="reg-card reveal">
+      <p class="reg-name">What is the EU AI Act deadline for UK financial institutions?</p>
+      <p class="reg-desc">High-risk AI systems — including credit scoring, fraud detection, and AML — must comply by August 2026. UK firms with EU operations or counterparties face direct exposure regardless of Brexit. A further extension to December 2027 is under discussion but should not be treated as permission to wait.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">Which AI systems are classified as high-risk?</p>
+      <p class="reg-desc">Under Annex III of the EU AI Act, high-risk systems in financial services include credit scoring models, fraud detection systems, AML transaction monitoring, HR screening tools, and automated decisions affecting access to financial services.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">What does SMCR accountability for AI mean?</p>
+      <p class="reg-desc">Under SMCR, a named senior manager must be accountable for AI governance at board level. Most UK financial institutions have not yet assigned this. It is one of the first gaps the diagnostic identifies — and one of the easiest to fix.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">Do we need a retainer to work with AIExpertsPro?</p>
+      <p class="reg-desc">No. The diagnostic is a fixed-fee, standalone engagement. No retainer is required. Most clients choose to move to a monthly governance retainer after seeing the diagnostic output, but that decision is entirely yours.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">How long does the diagnostic take?</p>
+      <p class="reg-desc">Five business days from kickoff to delivery of your board-ready report. The engagement includes a structured intake process, documentation review, and a 90-minute executive debrief with Folu personally.</p>
+    </div>
+    <div class="reg-card reveal">
+      <p class="reg-name">We already have a compliance team. Why do we need this?</p>
+      <p class="reg-desc">Compliance teams typically operate against existing frameworks — which predate modern AI. The diagnostic is AI-specific: it maps your actual production systems against EU AI Act tiers and the 12 governance dimensions regulators will scrutinise. Most compliance frameworks have not yet been updated for AI.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#top" class="footer-logo">AIExperts<span>Pro</span></a>
+  <ul class="footer-links">
+    <li><a href="#diagnostic">Diagnostic</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://aiexpertspro.com/privacy.html">Privacy</a></li>
+    <li><a href="https://aiexpertspro.com/terms.html">Terms</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 AIExpertsPro · London, UK</p>
 </footer>
 
-<script src="js/main.js"></script>
-</body>
-</html>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isInte
